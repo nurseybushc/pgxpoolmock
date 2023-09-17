@@ -3,9 +3,9 @@ module github.com/driftprogramming/pgxpoolmock
 go 1.20
 
 require (
-	github.com/golang/mock v1.5.0
+	github.com/golang/mock v1.6.0
 	github.com/jackc/pgx/v5 v5.4.3
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.4
 )
 
 require (
