@@ -9,9 +9,9 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	pgconn "github.com/jackc/pgconn"
-	pgx "github.com/jackc/pgx/v4"
-	pgxpool "github.com/jackc/pgx/v4/pgxpool"
+	pgconn "github.com/jackc/pgx/v5/pgconn"
+	pgx "github.com/jackc/pgx/v5"
+	pgxpool "github.com/jackc/pgx/v5/pgxpool"
 )
 
 // MockPgxPool is a mock of PgxPool interface.
@@ -177,7 +177,7 @@ func (mr *MockPgxPoolMockRecorder) Query(arg0, arg1 interface{}, arg2 ...interfa
 }
 
 // QueryFunc mocks base method.
-func (m *MockPgxPool) QueryFunc(arg0 context.Context, arg1 string, arg2, arg3 []interface{}, arg4 func(pgx.QueryFuncRow) error) (pgconn.CommandTag, error) {
+func (m *MockPgxPool) QueryFunc(arg0 context.Context, arg1 string, arg2, arg3 []interface{}, arg4 func() error) (pgconn.CommandTag, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "QueryFunc", arg0, arg1, arg2, arg3, arg4)
 	ret0, _ := ret[0].(pgconn.CommandTag)
