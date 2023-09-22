@@ -3,9 +3,9 @@ module github.com/nurseybushc/pgxpoolmock
 go 1.20
 
 require (
-	github.com/golang/mock v1.6.0
 	github.com/jackc/pgx/v5 v5.4.3
 	github.com/stretchr/testify v1.8.4
+	go.uber.org/mock v0.3.0
 )
 
 require (

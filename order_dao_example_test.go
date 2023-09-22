@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/golang/mock/gomock"
 	"github.com/jackc/pgx/v5/pgconn"
 	"github.com/nurseybushc/pgxpoolmock"
 	"github.com/nurseybushc/pgxpoolmock/testdata"
 	"github.com/stretchr/testify/assert"
+	"go.uber.org/mock/gomock"
 )
 
 func TestInsertOrder(t *testing.T) {
